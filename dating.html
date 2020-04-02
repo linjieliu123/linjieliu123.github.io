@@ -1,0 +1,112 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="dating.css">
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<form>
+	<h2 style="align-self: center;"> Pleas Enter Your Details For Our Dating Website!</h2>
+	<fieldset>
+		<legend>Your Face</legend>
+		
+		<label class="hoverOver">Your image</label><input type="file" name="Image"> 
+
+		<label class="hoverOver">Image preview</label>
+		
+	</fieldset>
+	<fieldset>
+		<legend>Your Contact Details</legend>
+		<div class="hoverOver">
+			<label >Name</label>
+			<input class="inside" type="fieldset" name="name" 
+			value="Your full name" onfocus="this.value=''">
+		</div>
+		<div class="hoverOver">
+		    <label>Gender</label>
+			<input class="inside" type="radio" id="male" name="gender" value="male">
+			Male
+		    <input class="inside" type="radio" id="female" name="gender" value="female"> 
+	    	Female <br>
+	    </div>
+	    <div class="hoverOver">  	
+			<label>Age</label>
+			<input class="inside" type="Number" min="0" style="width: 50px" name="age"> <br>
+	    </div>
+		
+		<div class="hoverOver">
+			<label>Date of birth</label>	
+			<input class="inside" type="Date" name="DOB" ></br>
+		</div>
+			
+		<div class="hoverOver">
+			<label>Favorite color</label>
+			<input class="inside" type="color" name="color"></br>	
+		</div>
+		
+		<div class="hoverOver">
+			<label for="cars">Which country</label>
+
+			<select id="countries" class="inside">
+		  <option value="China">China</option>
+		  <option value="India">India</option>
+		  <option value="Japan">Japan</option>
+		  <option value="Iraq">Irap</option>
+		</select>	
+		</div>
+		
+	</fieldset>
+	<fieldset>
+		<legend>Your Indicators</legend>
+		<div class="hoverOver">
+			<label>Height</label>
+			<input type="fieldset" name="Email" value="Short" readonly class="redBox" class="inside">
+			<input type="range" name="slider">
+			<input type="fieldset" name="Email" value="Tall" readonly class="purpleBox">
+		</div>
+		<div class="hoverOver">
+			<label>Salary</label>
+			<input type="fieldset" name="Email" value="Poor" readonly class="redBox">
+			<input type="range" name="slider">
+			<input type="fieldset" name="Email" value="Rich" readonly class="purpleBox"><br>
+		</div>
+		
+	</fieldset>
+	<fieldset>
+		<legend>Your Contact Information</legend>
+		<div class="hoverOver">
+			<label>Email</label>
+			<input type="fieldset" name="Email" class="inside">
+		<br>	
+		</div>
+		<div class="hoverOver">
+			<label>Mobile</label>
+			<input type="fieldset" name="mobile" class="inside">
+		<br>
+		</div>
+		
+		<div class="hoverOver">
+			<label>Address</label> 
+			<input style="height: 40px;font-size: 15px" type="fieldset" name="address" class="inside">
+		
+		<br>	
+		</div>
+		
+		<div class="hoverOver">
+			Method to contact you
+			<input type="checkbox" id="method1" name="method1" value="email" >
+		    Email
+		    <input type="checkbox" id="method2" name="method2" value="whatsapp">
+		    Whatsapp
+		    <input type="checkbox" id="method3" name="method3" value="In-app">
+		   In-app chat
+		</div>
+		
+		
+		    
+	</fieldset>
+	<input type="submit" value="Submit"></label>
+	</form>
+</body>
+</html>

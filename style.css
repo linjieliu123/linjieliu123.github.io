@@ -1,0 +1,42 @@
+body{
+	background-color: black;
+	font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+/*  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;*/
+}
+
+li {
+	float:left;
+}
+
+li a {
+	font-family:Courier New;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gray;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+div.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin:auto;
+  width:50%;
+}

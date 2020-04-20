@@ -1,15 +1,25 @@
-body{
-	background-color: black;
+body.home{
+	height: 100%;
 	font-size: 28px;
 }
+.bg{
+	background-image: url('http://img3.imgtn.bdimg.com/it/u=4006958541,2572606996&fm=26&gp=0.jpg');
+	
+  /* Full height */
+  height: 100%; 
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 ul {
   list-style-type: none;
-/*  margin: 0;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   position: sticky;
-  top: 0;*/
+  top: 0;
 }
 
 li {
@@ -39,4 +49,34 @@ div.header {
   top: 0;
   margin:auto;
   width:50%;
+}
+
+.loader{
+	position: fixed;
+	z-index: 99;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader >img{
+	width:100px;
+}
+
+.loader.hidden{
+	animation:fadeOut 1s;
+	animation-fill-mode:forwards;
+}
+
+
+@keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
 }
